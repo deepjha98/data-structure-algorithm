@@ -1,3 +1,2 @@
-export const DEFAULT_DATA: string = "HELLO";
-
-console.log({ DEFAULT_DATA });
+// import { uniqueInOddArray } from "./Arrays/index";
+// console.log(uniqueInOddArray([2, 3, 6, 1, 1, 2, 3, 6, 7]));
