@@ -1,2 +1,2 @@
-// import { uniqueInOddArray } from "./Arrays/index";
-// console.log(uniqueInOddArray([2, 3, 6, 1, 1, 2, 3, 6, 7]));
+import { findDuplicate } from "./Arrays/index";
+console.log(findDuplicate([1, 2, 3, 4, 4]));
