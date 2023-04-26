@@ -38,3 +38,28 @@ export function findDuplicate(arr: number[]): number {
   return ans;
 }
 // findDuplicate([1,2,3,4,4],5)
+
+// Return intersection of two arrays
+export function findArrayIntersection(
+  arr1: number[],
+  arr2: number[]
+): number[] {
+  let i = 0,
+    j = 0;
+
+  const result = [];
+
+  while (i < arr1.length && j < arr2.length) {
+    if (arr1[i] == arr2[j]) {
+      result.push(arr1[i]);
+      i++;
+      j++;
+    } else if (arr1[i] < arr2[j]) {
+      i++;
+    } else {
+      j++;
+    }
+  }
+  return result;
+}
+// findArrayIntersection([1, 2, 2, 2, 3, 4],[2,3])
