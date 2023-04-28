@@ -63,3 +63,31 @@ export function findArrayIntersection(
   return result;
 }
 // findArrayIntersection([1, 2, 2, 2, 3, 4],[2,3])
+
+// You are given an integer array 'ARR' of size 'N' and an integer 'S'. Your task is
+// to return the list of all pairs of elements such that each sum of elements of
+// each pair equals 'S'.
+function triplePairSum(arr1: number[], arr2: number[], sum: number): number {}
+// pairSum([1, 2, 2, 2, 3, 4],5)
+
+// Given an array of length N consisting of only 0s and 1s in random order.
+// Modify the array to segregate 0s on left side and 1s on the right side of the array.
+// --> 0 0 0 1 1
+export function segregate0and1(arr: (0 | 1)[], n: number) {
+  let i = 0,
+    j = n - 1;
+  while (i < j) {
+    if (arr[i] > arr[j]) {
+      let temp = arr[i];
+      arr[i] = arr[j];
+      arr[j] = temp;
+      i++;
+      j--;
+    } else if (arr[j] === 1) {
+      j--;
+    } else if (arr[i] === 0) {
+      i++;
+    }
+  }
+}
+// segregate0and1([0, 0, 1, 1, 0],5)
