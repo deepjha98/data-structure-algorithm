@@ -76,7 +76,7 @@ function triplePairSum(arr1: number[], arr2: number[], sum: number): number {}
 export function segregate0and1(arr: (0 | 1)[], n: number) {
   let i = 0,
     j = n - 1;
-  while (i < j) {
+  while (i <= j) {
     if (arr[i] > arr[j]) {
       let temp = arr[i];
       arr[i] = arr[j];
@@ -91,3 +91,10 @@ export function segregate0and1(arr: (0 | 1)[], n: number) {
   }
 }
 // segregate0and1([0, 0, 1, 1, 0],5)
+
+/** S0rt 0, 1 2
+ * @param {number[]} nums
+ * @return {void} Do not return anything, modify nums in-place instead.
+ */
+export var sort012 = function (nums: (0 | 1 | 2)[]) {};
+sort012([2, 0, 2, 1, 1, 0]);
