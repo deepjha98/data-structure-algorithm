@@ -67,7 +67,7 @@ export function findArrayIntersection(
 // You are given an integer array 'ARR' of size 'N' and an integer 'S'. Your task is
 // to return the list of all pairs of elements such that each sum of elements of
 // each pair equals 'S'.
-function triplePairSum(arr1: number[], arr2: number[], sum: number): number {}
+function triplePairSum(arr1: number[], arr2: number[], sum: number) {}
 // pairSum([1, 2, 2, 2, 3, 4],5)
 
 // Given an array of length N consisting of only 0s and 1s in random order.
@@ -91,53 +91,3 @@ export function segregate0and1(arr: (0 | 1)[], n: number) {
   }
 }
 // segregate0and1([0, 0, 1, 1, 0],5)
-
-/** S0rt 0, 1 2 - DUTCH National flag algorithm
- * @param {number[]} nums
- * @return {void} Do not return anything, modify nums in-place instead.
- */
-export var sort012 = function (nums: (0 | 1 | 2)[]) {};
-sort012([2, 0, 2, 1, 1, 0]);
-
-/**
- * @param {number[]} nums
- * @param {number} target
- * @return {number[]}
- */
-export var firstAndLastOccurence = function (
-  nums: number[],
-  target: number
-): number[] {
-  let start = 0,
-    end = nums.length - 1,
-    mid = Math.floor((start + end) / 2);
-  let ans = [-1, -1];
-  while (start <= end) {
-    if (nums[mid] === target) {
-      ans[0] = mid;
-      end = mid - 1;
-    } else if (nums[mid] < target) {
-      start = mid + 1;
-    } else {
-      end = mid - 1;
-    }
-    mid = Math.floor((start + end) / 2);
-  }
-  if (ans[0] === -1) return ans;
-  start = ans[0];
-  end = nums.length - 1;
-  mid = Math.floor((start + end) / 2);
-  while (start <= end) {
-    if (nums[mid] === target) {
-      ans[1] = mid;
-      start = mid + 1;
-    } else if (nums[mid] < target) {
-      start = mid + 1;
-    } else {
-      end = mid - 1;
-    }
-    mid = Math.floor((start + end) / 2);
-  }
-  return ans;
-};
-// firstAndLastOccurence([5,7,7,8,8,10],8) nums = [5,7,7,8,8,10], target = 8
