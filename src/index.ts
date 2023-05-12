@@ -1,2 +1,2 @@
-// import { searchInRotatedSorted } from "./Arrays/index";
-// console.log(searchInRotatedSorted([5, 1, 3], 3));
+import { sol } from "./BinarySearch/BookAllocationProblem";
+console.log(sol.findPages([15, 10, 19, 10, 5, 18, 7], 7, 5));
