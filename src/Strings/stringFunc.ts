@@ -11,5 +11,9 @@ export var removeOccurrences = function (s: string, part: string): string {
   }
   return s;
 };
-
 // removeOccurrences("daabcbaabcbc", "abc");
+
+// Permutation in String
+// Given two strings s1 and s2, return true if s2 contains a permutation of s1, or false otherwise.
+function checkInclusion(s1: string, s2: string): boolean {}
+// checkInclusion()
