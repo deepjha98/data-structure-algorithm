@@ -1,2 +1,2 @@
-import { sumOfArray } from "./Recursion/SumOfArray";
-console.log(sumOfArray([1, 2, 3, 9]));
+import { QuickSort } from "./Sorting/QuickSort";
+console.log(QuickSort([21, 72, 15, 3, 7, 97, 45]));
