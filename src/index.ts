@@ -1,2 +1,2 @@
-import { QuickSort } from "./Sorting/QuickSort";
-console.log(QuickSort([21, 72, 15, 3, 7, 97, 45]));
+import { letterCombinations } from "./Recursion/LetterCombinations";
+console.log(letterCombinations("23"));
