@@ -1,15 +1,10 @@
-import { RatInMaze } from "./Recursion/ratInMaze";
+import BSTNode from "./BST";
+import { insertIntoBST } from "./BST";
 
-const rat = new RatInMaze();
+const node = new BSTNode(2);
+const data: number[] = [6, 2, 7, 8, 1, 3, 9, 1];
+data.forEach((element) => {
+  insertIntoBST(node,element)
+});
 
-console.log(
-  rat.findPath(
-    [
-      [1, 0, 0, 0],
-      [1, 1, 0, 1],
-      [1, 1, 0, 0],
-      [0, 1, 1, 1],
-    ],
-    4
-  )
-);
+console.log(node)
